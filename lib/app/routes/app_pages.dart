@@ -7,6 +7,9 @@ import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 
+import '../modules/verification/bindings/verification_binding.dart';
+import '../modules/verification/views/verification_view.dart';
+
 part 'app_routes.dart';
 
 class AppPages {
@@ -15,6 +18,7 @@ class AppPages {
   static const INITIAL = Routes.HOME;
   static const LOGIN = Routes.LOGIN;
   static const CREATE = Routes.ACCOUNT_CREATE;
+  static const VERIFY = Routes.VERIFICATION;
 
   static final routes = [
     GetPage(
@@ -31,6 +35,12 @@ class AppPages {
       name: _Paths.ACCOUNT_CREATE,
       page: () => const AccountCreateView(),
       binding: AccountCreateBinding(),
+    ),
+
+    GetPage(
+      name: _Paths.VERIFICATION,
+      page: () => const VerificationView(),
+      binding: VerificationBinding(),
     ),
   ];
 }

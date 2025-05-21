@@ -1,7 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class AccountCreateController extends GetxController {
-  //TODO: Implement AccountCreateController
+  final phoneController = TextEditingController();
+  // final FirebaseAuth auth = FirebaseAuth.instance;
+
+  var verificationId= ''.obs;
 
   final count = 0.obs;
   @override
@@ -20,4 +25,12 @@ class AccountCreateController extends GetxController {
   }
 
   void increment() => count.value++;
+
 }
+
+// void sendOtp(String phone)async{
+//   await auth.verifyPhoneNumber(
+//     phoneNumber : phone,
+//
+//   )
+

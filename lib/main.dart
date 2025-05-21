@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
     textSelectionTheme: TextSelectionThemeData(
     cursorColor: AppColor.accentColor,
     selectionHandleColor: AppColor.primaryAppColor1
-    )
+    ),
     ),
     )
     );

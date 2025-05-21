@@ -6,6 +6,8 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const LOGIN = _Paths.LOGIN;
   static const ACCOUNT_CREATE = _Paths.ACCOUNT_CREATE;
+  static const PAGE_NAME = _Paths.PAGE_NAME;
+  static const VERIFICATION = _Paths.VERIFICATION;
 }
 
 abstract class _Paths {
@@ -13,4 +15,6 @@ abstract class _Paths {
   static const HOME = '/home';
   static const LOGIN = '/login';
   static const ACCOUNT_CREATE = '/account-create';
+  static const PAGE_NAME = '/page-name';
+  static const VERIFICATION = '/verification';
 }

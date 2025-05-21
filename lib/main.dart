@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
     child: GetMaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Kuniko",
-    initialRoute: AppPages.LOGIN,
+    initialRoute: AppPages.CREATE,
     initialBinding: HomeBinding(),
     getPages: AppPages.routes,
     theme: ThemeData(

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/account_create/bindings/account_create_binding.dart';
+import '../modules/account_create/views/account_create_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -12,6 +14,7 @@ class AppPages {
 
   static const INITIAL = Routes.HOME;
   static const LOGIN = Routes.LOGIN;
+  static const CREATE = Routes.ACCOUNT_CREATE;
 
   static final routes = [
     GetPage(
@@ -23,6 +26,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => const LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACCOUNT_CREATE,
+      page: () => const AccountCreateView(),
+      binding: AccountCreateBinding(),
     ),
   ];
 }
